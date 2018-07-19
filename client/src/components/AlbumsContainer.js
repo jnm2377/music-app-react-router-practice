@@ -45,6 +45,7 @@ class AlbumsContainer extends Component {
             style={{ maxWidth: 250 }}
           >
             {/* VerticalMenu will go here */}
+            <VerticalMenu albums={this.state.albums}/>
           </div>
           <div className='ui ten wide column'>
             {
