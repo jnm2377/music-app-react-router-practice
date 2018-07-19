@@ -1,4 +1,5 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 
 import TopBar from './TopBar';
 import AlbumsContainer from './AlbumsContainer';
@@ -10,7 +11,8 @@ const App = () => (
     <TopBar />
     <div className='spacer row' />
     <div className='row'>
-      <AlbumsContainer />
+      {/* Instead of rendering component here, we use Route to render component*/}
+      <Route path='/albums' component={AlbumsContainer}/>
     </div>
   </div>
 );
