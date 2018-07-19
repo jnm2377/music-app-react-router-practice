@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import Album from './Album';
+import VerticalMenu from './VerticalMenu';
 import { client } from '../Client';
 
 const ALBUM_IDS = [
